@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.itemPanel img {
+  width: 125px;
+}
+
+.itemPanel .btnCtrl div {
+  display: none;
+}
+
+.firmImg img {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.btnCtrl div {
+  cursor: pointer;
+
+}
+
+.firmImgs img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.firmOffer {
+  position: relative;
+  width: 100%;
+}
+
+.offer {
+  color: #fff;
+  width: 104%;
+  position: absolute;
+  bottom: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  background: transparent;
+  background: linear-gradient(to bottom, rgba(30, 0, 0, 0.4), black);
+  text-transform: uppercase;
+}
+
+.productImage img {
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.productImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addCart {
+  border-radius: 10px;
+  position: absolute;
+  bottom: -20px;
+  width: 75%;
+  margin: auto !important;
+  cursor: pointer;
+  padding: 5%;
+  color: green !important;
+}
+
+a {
+  color: #212529 !important;
+  text-decoration: none !important;
+}
+
+.filters div {
+  cursor: pointer;
+}
+
+.active-filter {
+  background-color: lightgray;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+
+
+  .navBar {
+    width: 100vw !important;
+    padding: 10px !important;
+    justify-content: space-between !important;
+  }
+
+  .searchBar {
+    display: none;
+  }
+
+  .gallery {
+    justify-content: left !important;
+  }
+
+  .itemPanel .btnCtrl div {
+    display: inline-block;
+  }
+
+  .firmData {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .filters {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+  }
+
+  .filters div {
+    font-size: small !important;
+    font-weight: bold;
+  }
+
+  .offer {
+    width: 100%;
+  }
+
+  .productSection {
+    width: 100% !important;
+    margin-top: 10px !important;
+    padding: 0 !important;
+  }
+
+  .productSection img {
+    width: 100px !important;
+    height: 75px !important;
+  }
+
+  .addCart {
+    bottom: -15px;
+  }
+
+  .restaurantName {
+    width: 100% !important;
+    text-align: center !important;
+    background-color: orange;
+    padding: 15px 0 !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+  }
+}
